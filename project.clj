@@ -7,10 +7,11 @@
                   :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]]
 
-  :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :plugins [[lein-npm "0.6.1"]
-            [michaelblume/lein-marginalia "0.9.0"] ; forked https://github.com/MichaelBlume/lein-marginalia
-            ]
+            [michaelblume/lein-marginalia "0.9.0"]] ; forked https://github.com/MichaelBlume/lein-marginalia
+
+  :jvm-opts ^:replace ["-Xmx1g" "-server"]
+
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
   :target-path "target"
