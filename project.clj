@@ -1,5 +1,5 @@
 (defproject cs1 "0.1.0-SNAPSHOT"
-  :description "Minimal ClojureScript project using JavaScript files"
+  :description "Minimal ClojureScript project using JavaScript libraries"
   :url "http://defn.github.io/cs1"
 
   :dependencies [[org.clojure/clojure "1.7.0"]

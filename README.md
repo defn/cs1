@@ -1,10 +1,15 @@
 # cs1
 
-FIXME: Write a one-line description of your library/project.
+Minimal ClojureScript project using JavaScript libraries
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Customizing a ClojureScript project is frustrating because it's not
+clear how ClojureScript fits with other JavaScript tools.  For
+non-Clojure users, it's easier to use JavaScript tools.
+
+cs1 is an attempt to treat ClojureScript as just another JavaScript
+tool that fits with other tools like WebPack, npm, etc.
 
 ## Setup
 
@@ -28,14 +33,9 @@ To get source map support in the Node REPL:
     
 To start a browser REPL:
     
-1. Uncomment the following lines in src/cs1/core.cljs:
-```clojure
-;; (defonce conn
-;;   (repl/connect "http://localhost:9000/repl"))
-```
-2. Run `./scripts/brepl`
-3. Browse to `http://localhost:9000` (you should see `Hello world!` in the web console)
-4. (back to step 3) you should now see the REPL prompt: `cljs.user=>`
+1. Run `./scripts/brepl`
+2. Browse to `http://localhost:9000` (you should see `Hello world!` in the web console)
+3. (back to step 1) you should now see the REPL prompt: `cljs.user=>`
 5. You may now evaluate ClojureScript statements in the browser context.
     
 For more info using the browser as a REPL environment, see
@@ -49,8 +49,14 @@ Build a single release artifact with the following script and then open `index_r
 
     ./scripts/release
 
+Generate documentation:
+
+    lein marg
+
+Then open `docs/uberdoc.html`
+
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 
 
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+Distributed under the Apache License version 2.0.
