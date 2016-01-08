@@ -1,6 +1,6 @@
 (defproject cs1 "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+  :description "Minimal ClojureScript project using JavaScript files"
+  :url "http://defn.github.io/cs1"
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.170" :classifier "aot"
