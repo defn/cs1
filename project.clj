@@ -6,8 +6,7 @@
                  [org.clojure/clojurescript "1.7.170" :classifier "aot"
                   :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]
-                 [reagent "0.6.0-alpha"
-                  :exclusion [cljsjs/react]]]
+                 [reagent "0.6.0-alpha"]]
 
   :plugins [[lein-npm "0.6.1"]
             [michaelblume/lein-marginalia "0.9.0"]] ;; forked https://github.com/MichaelBlume/lein-marginalia
